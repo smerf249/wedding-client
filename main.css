@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'wedding-font';
+    src: url('AlexBrush-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: 'wedding-font-labels';
+    src: url('Kalam-Regular.ttf');
+  }
+
+body {
+    background-color: #f7e1d7;
+}
+
+#couple-name {
+    text-align: center;
+    font-family: wedding-font;
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: 20%;
+    margin-bottom: 15%;
+}
+
+.bride-groom-animation {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+  
+#bride-svg {
+    animation-name: move-left-center;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 25%;
+    height: auto;
+}
+
+#groom-svg {
+    animation-name: move-right-center;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 25%;
+    height: auto;
+}
+
+@keyframes move-left-center {
+    0% {
+        translate: 0 0;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(135%);
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(135%);
+    }
+}
+
+@keyframes move-right-center {
+    0% {
+        translate: 0 0;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(-135%);
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-135%);
+    }
+}
+
+#heart-wrapper {
+    position: absolute;
+    width: 100%;
+  }
+  
+  #pulsingheart { 
+    position: relative; 
+    margin-left: 45%;
+    margin-top: 5%;
+    width: 12%; 
+    height: auto;
+    animation: pulse 5s infinite;
+    opacity: 0;
+  } 
+  
+  @keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    55% {
+        opacity: 1;
+        transform: scale(1)
+    }
+    65% {
+        opacity: 1;
+        transform: scale(1.3)
+    }
+    80% {
+        opacity: 1;
+        transform: scale(1)
+    }
+    90% {
+        opacity: 1;
+        transform: scale(1.3)
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1)    }
+  }
+
+#wedding-date {
+    width: 100%;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: wedding-font;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+#month {
+    width: 25%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+#wedding-couple {
+    width: 100%;
+    height: auto;
+}
+
+#form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#wishes-label {
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+    font-family: wedding-font-labels;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+#wishes {
+    width: 80%;
+    font-size: 18px;
+    font-family: wedding-font-labels;
+    resize: none;
+    border-radius: 15px;
+    padding: 4%;
+    border: none;
+    mask: radial-gradient(25px at 40px 40px, transparent 98%, black) -40px -40px;
+    text-align: center;
+}
+
+#signature-label {
+    font-size: 25px;
+    font-family: wedding-font-labels;
+    margin-top: 8%;
+    margin-bottom: 1%;
+    width: 100%;
+    text-align: center;
+}
+
+#signature {
+    width: 80%;
+    padding: 2% 4%;
+    font-size: 20px;
+    font-family: wedding-font-labels;
+    margin-bottom: 5%;
+    border: none;
+    overflow: hidden;
+    position: relative;
+    mask: radial-gradient(circle 15px at top left, transparent 98%, black) top left,
+    radial-gradient(circle 15px at bottom left, transparent 98%, black) bottom left,
+    radial-gradient(circle 15px at top right, transparent 98%, black) top right,
+    radial-gradient(circle 15px at bottom right, transparent 98%, black) bottom right;
+    mask-size: 51% 51%;
+    mask-repeat: no-repeat;
+    text-align: center;
+}
+
+#images-input {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+#images-input + label {
+    width: 50%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.25em;
+    font-weight: 500;
+    color: black;
+    background-color: #edafb8;
+    display: inline-block;
+    border-radius: 50px;
+    font-family: wedding-font-labels;
+}
+
+#submit-wrapper {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#submit {
+    padding: 2%;
+    width: 30%;
+    font-size: 1.5em;
+    font-family: wedding-font-labels;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    background-color: #b0c4b1;
+    border: none;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%
+}
+
+*:focus {
+    outline: none;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    display: none;
+ }
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -6,18 +6,39 @@
         <link rel="stylesheet" type="text/css" href="main.css">
         <link rel="icon" type="image/x-icon" href="icon.png">
         <title>Ania & Bartek</title>
-        <!-- <script src="scroll-to-top.js"></script> -->
+        <script src="added-images.js"></script>
+        <script src="upload-data.js"></script>
     </head>
     <body>
-        <div>
-            <h1>Anna & Bartosz</h1>
-            <h2>31 08 2024</h2>
+        <div class="loader" id="loader"></div>
+        <div id="content">
+            <div>
+                <h1 id="couple-name">Anna&nbsp;&nbsp;&&nbsp;&nbsp;Bartosz</h1>
+                <div class="bride-groom-animation">
+                    <img id="bride-svg" src="bride-svgrepo-com.png" width="100" height="100">
+                    <img id="groom-svg" src="groom-svgrepo-com.png" width="100" height="100">
+                    <div id="heart-wrapper">
+                        <img id="pulsingheart" src="heart.png">
+                    </div>
+                </div>
+                <h2 id="wedding-date">
+                    <div>31</div>
+                    <div id="month">08</div>
+                    <div>2024</div>
+                </h2>
+            </div>
+            <img src="wedding-couple2.png" id="wedding-couple">
+            <div id="form-wrapper">
+                <h3 id="wishes-label">Złóż życzenia i dodaj weselne zdjęcia</h3>
+                <textarea id="wishes" placeholder="Tutaj wpisz życzenia" rows="7" cols="50"></textarea>
+                <p id="signature-label">Życzy:</p>
+                <input type="text" id="signature">
+                <input type="file" id="images-input" multiple="true" accept=".png, .jpg, .jpeg .heif .heic" onchange="onAddedImages(this)">
+                <label for="images-input" id="image-input-label">Dodaj zdjęcia</label>
+                <div id="submit-wrapper">
+                    <input id="submit" type="submit" onclick="onSubmit()">
+                </div>
+            </div>
         </div>
-        <img src="wedding-couple.jpg">
-        <h3>Złóż życzenia i podziel się zdjęciami z wesela</h3>
-        <textarea id="wishes" placeholder="Tutaj wpisz życzenia" rows="4" cols="50"></textarea>
-        <p>Życzy/ą:</p>
-        <input type="text">
-        <input type="file" id="myfile" name="myfile" multiple="true" accept=".png, .jpg, .jpeg .heic">
     </body>
 </html>
