@@ -1,6 +1,6 @@
 function onSubmit() {
     const loader = document.getElementById('loader')
-    loader.style.display = "block"
+    loader.style.opacity = "1"
 
     let wishesInput = document.getElementById("wishes")
     let signatureInput = document.getElementById("signature")
@@ -30,7 +30,7 @@ function onSubmit() {
         method: "POST",
         body: data
     }).then(res => {     
-        loader.style.display = "none"
+        loader.style.opacity = "0"
         for (var i = 0; i < len; i++) {
             inputs[i].disabled = false;
         }

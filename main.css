@@ -230,7 +230,7 @@ body {
 }
 
 #images-input + label {
-    width: 50%;
+    width: 60%;
     text-align: center;
     padding: 10px 0;
     font-size: 1.25em;
@@ -274,8 +274,8 @@ body {
 }
 
 .loader {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #3498db; /* Blue */
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #4a5759;
     border-radius: 50%;
     width: 80px;
     height: 80px;
@@ -286,7 +286,7 @@ body {
     top: 0;
     bottom: 0;
     position: fixed;
-    display: none;
+    opacity: 0;
  }
 
 @keyframes spin {
