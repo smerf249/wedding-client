@@ -1,23 +1,29 @@
 @font-face {
     font-family: 'wedding-font';
-    src: url('AlexBrush-Regular.ttf');
+    src: url('./fonts/AlexBrush-Regular.ttf');
   }
 
-  @font-face {
+@font-face {
     font-family: 'wedding-font-labels';
-    src: url('Kalam-Regular.ttf');
+    src: url('./fonts/Kalam-Regular.ttf');
   }
 
 body {
     background-color: #f7e1d7;
 }
 
+#divider-top {
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+}
+
 #couple-name {
     text-align: center;
     font-family: wedding-font;
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 400;
-    margin-top: 20%;
+    margin-top: 10%;
     margin-bottom: 15%;
 }
 
@@ -137,7 +143,7 @@ body {
     justify-content: center;
     text-align: center;
     font-family: wedding-font;
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 400;
 }
 
@@ -154,6 +160,12 @@ body {
     height: auto;
 }
 
+#divider-bottom {
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+}
+
 #form-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -161,7 +173,7 @@ body {
 }
 
 #wishes-label {
-    margin-top: 10%;
+    margin-top: 5%;
     width: 100%;
     text-align: center;
     font-family: wedding-font-labels;
