@@ -160,7 +160,7 @@ body {
     height: auto;
 }
 
-#divider-bottom {
+#divider-middle {
     width: 100%;
     height: auto;
     margin-top: 5%;
@@ -259,7 +259,14 @@ body {
     background-color: #b0c4b1;
     border: none;
     border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
-    margin-bottom: 15%;
+    margin-bottom: 3%;
+}
+
+#divider-bottom {
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 *:focus {
