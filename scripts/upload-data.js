@@ -39,6 +39,6 @@ function onSubmit() {
         wishesInput.value = ''
         signatureInput.value = ''
         imagesInput.value = ''
-        document.getElementById("image-input-label").innerHTML = labelContent
+        document.getElementById("image-input-label").innerHTML = 'Dodaj zdjęcia (Maks. 10)'    
     })
 }

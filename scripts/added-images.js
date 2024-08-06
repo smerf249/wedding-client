@@ -15,7 +15,6 @@ function onAddedImages(element) {
             element.value = ''
         } else {
             labelContent = "Dodane zdjęcia: " + element.files.length;
-            document.getElementById("image-input-label").innerHTML = 'Dodaj zdjęcia (Maks. 10)'
         }
     }
 }
