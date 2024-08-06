@@ -25,7 +25,7 @@ function onSubmit() {
         data.append('images', file, file.name);
     }
 
-    const URL = "http://localhost:3000/wedding-wishes"
+    const URL = "https://wedding-app-server.onrender.com/wedding-wishes"
     fetch(URL, {
         method: "POST",
         body: data
