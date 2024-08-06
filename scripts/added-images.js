@@ -14,7 +14,8 @@ function onAddedImages(element) {
             alert('Przekroczono rozmiar pliku')
             element.value = ''
         } else {
-            labelContent = "Dodane zdjęcia: " + element.files.length;
+            labelContent = "Dodane zdjęcia: " + element.files.length
+            document.getElementById("image-input-label").innerHTML = labelContent 
         }
     }
 }
