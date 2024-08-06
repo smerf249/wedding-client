@@ -36,5 +36,9 @@ function onSubmit() {
         }
         wishesInput.disabled = false;
         content.style.opacity = "1"
+        wishesInput.value = ''
+        signatureInput.value = ''
+        imagesInput.value = ''
+        document.getElementById("image-input-label").innerHTML = labelContent
     })
 }
