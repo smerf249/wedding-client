@@ -12,6 +12,10 @@ body {
     background-color: #f7e1d7;
 }
 
+#content {
+    position: relative;
+}
+
 #divider-top {
     width: 100%;
     height: auto;
@@ -233,7 +237,7 @@ body {
     width: 60%;
     text-align: center;
     padding: 10px 0;
-    font-size: 1.25em;
+    font-size: 1.2em;
     font-weight: 500;
     color: black;
     background-color: #edafb8;
@@ -252,7 +256,7 @@ body {
 #submit {
     padding: 2%;
     width: 30%;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-family: wedding-font-labels;
     font-weight: 500;
     letter-spacing: 1.5px;
@@ -273,6 +277,84 @@ body {
     outline: none;
 }
 
+  #heart1 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    left: 2%;
+    opacity: 0.8;
+    animation: float-heart 30s linear infinite, side-way 2s ease-in-out infinite alternate;
+  }
+
+  #heart2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    left: 19%;
+    opacity: 0.9;
+    animation: float-heart 20s linear infinite, side-way 2s ease-in-out infinite alternate;
+  }
+
+  #heart3 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    left: 34%;
+    opacity: 0.7;
+    animation: float-heart 25s linear infinite, side-way 2s ease-in-out infinite alternate;
+  }
+
+  #heart4 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    left: 50%;
+    opacity: 0.6;
+    animation: float-heart 17s linear infinite, side-way 3s ease-in-out infinite alternate;
+  }
+
+  #heart5 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    left: 67%;
+    opacity: 0.8;
+    animation: float-heart 23s linear infinite, side-way 1s ease-in-out infinite alternate;
+  }
+
+  #heart6 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    left: 85%;
+    opacity: 0.7;
+    animation: float-heart 26s linear infinite, side-way 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes float-heart {     
+    0% { 
+        bottom: -2%;
+    }
+    100% { 
+        bottom: 100%;
+    }
+}
+
+@keyframes side-way {
+    0% {
+        margin-left:0px;
+    }
+    100% {
+        margin-left:30px;
+    }
+  }
+
 .loader {
     border: 16px solid #f3f3f3;
     border-top: 16px solid #4a5759;
@@ -292,4 +374,9 @@ body {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+#heart-border {
+    width: 30%;
+    height: auto;
 }

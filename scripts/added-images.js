@@ -8,10 +8,10 @@ function onAddedImages(element) {
             }
         }
         if(element.files.length > 10) {
-            alert('Maksymalna liczba zdjęć to 10')
+            alert('Maksymalna liczba zdjec to 10')
             element.value = ''
         } else if(filesizeExceeded) {
-            alert('Przekroczono rozmiar pliku')
+            alert('Zbyt duzy plik')
             element.value = ''
         } else {
             labelContent = "Dodane zdjęcia: " + element.files.length
